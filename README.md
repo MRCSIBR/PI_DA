@@ -18,9 +18,10 @@ Este repo es mi solucion a las consignas del repo de Data Analitics: https://git
 ## DESARROLLO
 
 Para desarrollar el proyecto realize un analisis de los datos con Jupyter Notebooks, luego
-traslade parte del codigo para crear una `webapp` con Streamlit interactiva que incluye: 
+use parte del codigo para crear una `webapp` con Streamlit interactiva que incluye: 
 Analisis de datos, Mapa con datos geograficos y la posibilidad de realizar consultas a base de datos SQL.
 
 ## Deploy con Streamlit
 
+En el siguiente link se puede explorar el proyecto.
 Link: https://uery2mavx8wab4cgor743k.streamlit.app/
