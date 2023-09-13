@@ -13,8 +13,6 @@ Este repo es mi solucion a las consignas del repo de Data Analitics: https://git
             |
             |__* Notebooks:  notebook.ipynb
             |                
-            |                
-            |
             |__* Codigo:     main.py
 
 ## DESARROLLO
@@ -25,4 +23,4 @@ Analisis de datos, Mapa con datos geograficos y la posibilidad de realizar consu
 
 ## Deploy con Streamlit
 
-Link:
+Link: https://uery2mavx8wab4cgor743k.streamlit.app/
