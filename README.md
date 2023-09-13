@@ -1,4 +1,4 @@
-# Data ANALITICS / Poyecto Individual N2
+# Data ANALITICS / Proyecto Individual N#2
 
 Mi rol como data analist es encontrar indicios o patrones en los datos que luego sirvan para la toma de decisiones. 
 En este caso el dataset a estudiar incluye informacion de accidentes viales en la zona de la Ciudad Autónoma de Buenos Aires CABA ocurridos entre 2016 y 2021. 
