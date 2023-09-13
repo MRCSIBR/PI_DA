@@ -1,8 +1,8 @@
 # Data ANALITICS / Proyecto Individual N#2
 
-Mi rol como data analist es encontrar indicios o patrones en los datos que luego sirvan para la toma de decisiones. 
-En este caso el dataset a estudiar incluye informacion de accidentes viales en la zona de la Ciudad Autónoma de Buenos Aires CABA ocurridos entre 2016 y 2021. 
-Las conclusiones de este analisis podran servir para mejorar la seguridad vial en esa area.
+Como analista de datos, mi rol es recopilar, limpiar e interpretar datos para resolver problemas y tomar decisiones informadas. 
+En este caso, el dataset que estoy estudiando incluye información sobre accidentes viales en la Ciudad Autónoma de Buenos Aires (CABA) ocurridos entre 2016 y 2021. 
+Mi objetivo es encontrar patrones y tendencias en los datos que puedan ayudar a mejorar la seguridad vial en la zona.
 
 Este repo es mi solucion a las consignas del repo de Data Analitics: https://github.com/soyHenry/PI_DA/
 
@@ -17,9 +17,8 @@ Este repo es mi solucion a las consignas del repo de Data Analitics: https://git
 
 ## DESARROLLO
 
-Para desarrollar el proyecto realize un analisis de los datos con Jupyter Notebooks, luego
-use parte del codigo para crear un `dashboard` con Streamlit interactiva que incluye: 
-Analisis de datos, Mapa con datos geograficos y la posibilidad de realizar consultas a base de datos SQL.
+Para desarrollar el proyecto, realicé un análisis de los datos con Jupyter Notebooks y luego utilicé parte del código para crear un dashboard interactivo con Streamlit. 
+El dashboard incluye análisis de datos, un mapa con datos geográficos y la posibilidad de realizar consultas a una base de datos SQL.
 
 ## Deploy con Streamlit
 
