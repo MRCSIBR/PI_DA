@@ -24,3 +24,7 @@ El dashboard incluye análisis de datos, un mapa con datos geográficos y la pos
 
 En el siguiente link se puede explorar el proyecto.
 Link: https://uery2mavx8wab4cgor743k.streamlit.app/
+
+## Funcionalidad de Mapa
+
+![mapa de calor](Screenshot.png)
