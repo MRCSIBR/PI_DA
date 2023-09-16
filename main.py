@@ -70,16 +70,43 @@ def main():
         st.subheader("Porcentajes de Víctimas por Categoría")
 
         # Group the data by 'VICTIMA' and sum the number of victims in each category
-        data_grouped = df_vial.groupby('VICTIMA')['N_VICTIMAS'].sum().reset_index()
+        #data_grouped = df_vial.groupby('VICTIMA')['N_VICTIMAS'].sum().reset_index()
 
         # Create the pie chart using Plotly Express
-        fig = px.pie(data_grouped, names='VICTIMA', values='N_VICTIMAS', title='Víctimas por Categoría')
+        #fig = px.pie(data_grouped, names='VICTIMA', values='N_VICTIMAS', title='Víctimas por Categoría')
 
         # Customize the chart (optional)
-        fig.update_traces(textinfo='percent+label', pull=[0.1, 0, 0], textfont_size=12)
+        #fig.update_traces(textinfo='percent+label', pull=[0.1, 0, 0], textfont_size=12)
 
+        import plotly.graph_objects as go
+
+        # Agrupa los datos por la columna 'VICTIMA' y suma el número de víctimas en cada categoría
+        data_grouped = df_vial.groupby('VICTIMA')['N_VICTIMAS'].sum().reset_index()
+        
+        # Ordenar los datos por el número de víctimas de forma descendente
+        data_grouped.sort_values('N_VICTIMAS', ascending=False, inplace=True)
+        
+        # Obtener los 4 valores más importantes y el resto
+        top_4 = data_grouped.head(4)
+        rest = data_grouped.iloc[4:]
+        
+        # Crear el gráfico de torta para los 4 valores más importantes
+        fig1 = go.Figure(data=[go.Pie(labels=top_4['VICTIMA'], values=top_4['N_VICTIMAS'])])
+        fig1.update_layout(title='Víctimas por Categoría (Top 4)')
+        
+        # Crear el gráfico de torta para el resto de valores
+        fig2 = go.Figure(data=[go.Pie(labels=rest['VICTIMA'], values=rest['N_VICTIMAS'])])
+        fig2.update_layout(title='Víctimas por Categoría (Resto)')
+        
+        # Mostrar los gráficos
+        #fig1.show()
+        #fig2.show()
+        
+        
+        
         # Display the pie chart using Streamlit
-        st.plotly_chart(fig)
+        st.plotly_chart(fig1)
+        st.plotly_chart(fig2)
 
         
         # ---------------
