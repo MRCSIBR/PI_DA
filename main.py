@@ -77,7 +77,7 @@ def main():
 
         # Customize the chart (optional)
         #fig.update_traces(textinfo='percent+label', pull=[0.1, 0, 0], textfont_size=12)
-
+        """
         import plotly.graph_objects as go
 
         # Agrupa los datos por la columna 'VICTIMA' y suma el número de víctimas en cada categoría
@@ -107,7 +107,7 @@ def main():
         # Display the pie chart using Streamlit
         st.plotly_chart(fig1)
         st.plotly_chart(fig2)
-
+        """
         
         # ---------------
         # Indicadores KPI
