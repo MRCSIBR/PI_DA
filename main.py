@@ -3,13 +3,13 @@ import pandas as pd
 import sqlite3
 import folium
 from streamlit_folium import st_folium 
-
+import plotly.graph_objects as go
 # Autor: Marcos D. Ibarra 
 # Github: https://github.com/MRCSIBR
 
+
 # Cargar los datos
 df_vial = pd.read_csv('data/df_vial.csv')
-
 
 def create_map():
     """ Funcion: create_map: Usa la libreria Folium para mostrar mapa """
@@ -20,7 +20,7 @@ def create_map():
     map_center = [df_vial.sample()['LATITUD'].values[0], df_vial.sample()['LONGITUD'].values[0]]
     m = folium.Map(location=map_center, zoom_start=14)
 
-    # Add markers for each accident location with red icons and tooltips
+    # Marcador rojo para cada accidente
     for index, row in df_vial.iterrows():
         lat = row['LATITUD']
         lon = row['LONGITUD']
@@ -43,10 +43,12 @@ def main():
     page = st.sidebar.selectbox("Elegir pagina", ["Data", "Mapa_CABA", "Consultas_SQL"])
 
     if page == "Mapa_CABA":
+        
         create_map()
     
     elif page == "Data":
         
+        # ---------------------------------
         # Titulo y parrafo de introduccion
         
         st.title("Data Analitics")
@@ -69,24 +71,41 @@ def main():
         
         st.subheader("Porcentajes de Víctimas por Categoría")
 
-        # Group the data by 'VICTIMA' and sum the number of victims in each category
+        import plotly.graph_objects as go
+
+        # Agrupa los datos por la columna 'VICTIMA' y suma el número de víctimas en cada categoría
         data_grouped = df_vial.groupby('VICTIMA')['N_VICTIMAS'].sum().reset_index()
 
-        # Create the pie chart using Plotly Express
-        fig = px.pie(data_grouped, names='VICTIMA', values='N_VICTIMAS', title='Víctimas por Categoría')
+        # Ordenar los datos por el número de víctimas de forma descendente
+        data_grouped.sort_values('N_VICTIMAS', ascending=False, inplace=True)
 
-        # Customize the chart (optional)
-        fig.update_traces(textinfo='percent+label', pull=[0.1, 0, 0], textfont_size=12)
+        # Obtener los 4 valores más importantes y el resto
+        top_4 = data_grouped.head(4)
+        rest = data_grouped.iloc[4:]
+
+        # Crear el gráfico de torta para los 4 valores más importantes
+        fig1 = go.Figure(data=[go.Pie(labels=top_4['VICTIMA'], values=top_4['N_VICTIMAS'])])
+        fig1.update_layout(title='Víctimas por Categoría (Top 4)')
+
+        # Crear el gráfico de torta para el resto de valores
+        fig2 = go.Figure(data=[go.Pie(labels=rest['VICTIMA'], values=rest['N_VICTIMAS'])])
+        fig2.update_layout(title='Víctimas por Categoría (Resto)')
+
+        # Mostrar los gráficos
+        #fig1.show()
+        #fig2.show()
+        st.plotly_chart(fig1)
+        st.plotly_chart(fig2)
         
-        st.plotly_chart(fig)
-       
+        st.markdown("#### OBSERVACION / Tarta de Porcentajes:")
+
+        st.write("La gran mayoria de los accidentes fatales son de motociclistas en primer lugar y luego peatones.") 
         
-        
-        # ---------------
+        #----------------
         # Indicadores KPI
         
 
-        # KPI 1: Analyze the distribution of accidents by day of the week
+        # KPI 1: Analizar la distribucion mensual de accidentes 
         st.subheader("KPI 1: Distribucion mensual de accidentes.")
 
         # Convert the 'FECHA' column to datetime format
