@@ -28,3 +28,8 @@ Link: https://uery2mavx8wab4cgor743k.streamlit.app/
 ## Funcionalidad de Mapa
 
 ![mapa de calor](Screenshot.png)
+
+## Changelog
+
+20.9.23 * Agregado chart tarta mas claro
+        * Tendencia de accidentes por hora  
