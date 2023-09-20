@@ -31,5 +31,5 @@ Link: https://uery2mavx8wab4cgor743k.streamlit.app/
 
 ## Changelog 20.9.2023
 
-- Agregado chart tarta doble para ver porcentajes
-- Tendencia de accidentes por hora  
+- Agregado chart tarta doble para ver categorias TOP4 y resto
+- Tendencia de numero accidentes por hora  
