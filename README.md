@@ -29,7 +29,7 @@ Link: https://uery2mavx8wab4cgor743k.streamlit.app/
 
 ![mapa de calor](Screenshot.png)
 
-## Changelog 20.9.2
+## Changelog 20.9.2023
 
 - Agregado chart tarta doble para ver porcentajes
 - Tendencia de accidentes por hora  
