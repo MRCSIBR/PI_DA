@@ -27,7 +27,9 @@ Link: https://uery2mavx8wab4cgor743k.streamlit.app/
 
 ## Funcionalidad de Mapa
 
-![mapa de calor](Screenshot.png)
+Tambien podemos ver un mapa con la ubicacion de cada accidente.
+
+![mapa](Screenshot1.png)
 
 ## Changelog 20.9.2023
 
