@@ -29,7 +29,7 @@ Link: https://uery2mavx8wab4cgor743k.streamlit.app/
 
 ## Funcionalidad de Mapa
 
-Tambien podemos ver un mapa con la ubicacion de cada accidente.
+Tambien podemos ver un mapa con la ubicacion de cada siniestro.
 
 ![mapa](Screenshot1.png)
 
