@@ -19,7 +19,7 @@ Este repo es mi solucion a las consignas del repo de Data Analitics: https://git
 
 ## DESARROLLO
 
-Para desarrollar el proyecto, realicé un análisis de los datos con Jupyter Notebooks y luego utilicé parte del código para crear un dashboard interactivo con Streamlit. 
+Para desarrollar el proyecto, realicé un análisis de los datos con Jupyter Notebooks y luego utilicé parte del código para crear un `dashboard interactivo con Streamlit.` 
 El dashboard incluye análisis de datos, un mapa con datos geográficos y la posibilidad de realizar consultas a una base de datos SQL.
 
 ## Deploy con Streamlit
