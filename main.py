@@ -97,7 +97,7 @@ def main():
         st.plotly_chart(fig1)
         st.plotly_chart(fig2)
         
-        st.markdown("#### OBSERVACION / Tarta de Porcentajes:")
+        st.markdown("#### OBSERVACIÓN: / Tarta de Porcentajes:")
 
         st.write("La gran mayoria de los accidentes fatales son de motociclistas en primer lugar y luego peatones.") 
         
@@ -125,13 +125,13 @@ def main():
         # Show the plot
         st.plotly_chart(fig)
 
-        st.markdown("#### OBSERVACION / Tendencia de accidentes por mes:")
+        st.markdown("#### OBSERVACIÓN: / Tendencia de accidentes por mes:")
 
         st.write("Hay una aumento de accidentes entre el mes ***octubre y diciembre***, relacionado quizas con las fiestas de navidad y año nuevo.") 
 
 
         # KPI 2: Tendencia diaria de Accidentes
-        st.subheader("KPI 2: Distribucion de accidentes por dia de la semana.")
+        st.subheader("KPI 2: Distribución de accidentes por dia de la semana.")
 
         # Convert the 'FECHA' column to datetime format
         df_vial['FECHA'] = pd.to_datetime(df_vial['FECHA'])
@@ -154,7 +154,7 @@ def main():
         # Mostrar el plot
         st.plotly_chart(fig)
 
-        st.markdown("#### OBSERVACION / Tendencia diaria: ")
+        st.markdown("#### OBSERVACION: / Tendencia diaria: ")
         st.markdown("Buscando un patron en la distribucion de accidentes por dia podemos notar que: ")
         st.write("***Los dias con mas accidentes son sabado, domingo y lunes, pero no hay una diferencia significativa con el resto de la semana.***")
 
@@ -171,7 +171,7 @@ def main():
         # Mostrar el plot
         st.plotly_chart(fig)
 
-        st.markdown("#### OBSERVACION / Tendencia año por año:")
+        st.markdown("#### OBSERVACIÓN: / Tendencia año por año:")
 
         st.write("Entre 2019 y 2020 el numero de accidentes baja considerablemente, debido a las restricciones implementadas en el marco de la cuarentena.")
     
