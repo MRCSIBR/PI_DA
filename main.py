@@ -154,7 +154,7 @@ def main():
         # Mostrar el plot
         st.plotly_chart(fig)
 
-        st.markdown("#### OBSERVACION: / Tendencia diaria: ")
+        st.markdown("#### OBSERVACIÓN: / Tendencia diaria: ")
         st.markdown("Buscando un patron en la distribucion de accidentes por dia podemos notar que: ")
         st.write("***Los dias con mas accidentes son sabado, domingo y lunes, pero no hay una diferencia significativa con el resto de la semana.***")
 
