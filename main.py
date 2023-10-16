@@ -51,10 +51,10 @@ def main():
         # ---------------------------------
         # Titulo y parrafo de introduccion
         
-        st.title("Data Analitics")
+        st.title("Data Analytics")
         st.subheader("Proyecto Individual N.2 / Data Science")
 
-        st.write("Mi rol como data analist es encontrar indicios o patrones en los datos que luego sirvan para la toma de decisiones.")
+        st.write("Mi rol como data analyst es encontrar indicios o patrones en los datos que luego sirvan para la toma de decisiones.")
         st.write("En este caso el dataset a estudiar incluye información de accidentes viales en la zona de la ***Ciudad Autónoma de Buenos Aires CABA*** ocurridos entre 2016 y 2021.")
         st.write("Las conclusiones de este análisis podrán servir para mejorar la seguridad vial en esa área.")
         st.write("Fuente de datos: https://data.buenosaires.gob.ar/dataset/victimas-siniestros-viales")
