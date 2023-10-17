@@ -1,4 +1,4 @@
-# Data ANALITICS / Proyecto Individual N#2
+# Data ANALYTICS / Proyecto Individual N#2
 
 ## Siniestros Viales
 
@@ -6,7 +6,7 @@ Como analista de datos, mi rol es recopilar, limpiar e interpretar datos para re
 En este caso, el dataset que estoy estudiando incluye información sobre accidentes viales en la Ciudad Autónoma de Buenos Aires (CABA) ocurridos entre 2016 y 2021. 
 Mi objetivo es encontrar patrones y tendencias en los datos que puedan ayudar a mejorar la seguridad vial en la zona.
 
-Este repo es mi solucion a las consignas del repo de Data Analitics: https://github.com/soyHenry/PI_DA/
+Este repo es mi solucion a las consignas del repo de Data Analytics: https://github.com/soyHenry/PI_DA/
 
 ## Estructura del proyecto:
 
