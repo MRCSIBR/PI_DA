@@ -31,7 +31,7 @@ Link: https://uery2mavx8wab4cgor743k.streamlit.app/
 
 Tambien podemos ver un mapa con la ubicacion de cada siniestro.
 
-![mapa](Screenshot1.png)
+![mapa](Rounded_map.png)
 
 ## Changelog 20.9.2023
 
